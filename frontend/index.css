@@ -45,6 +45,9 @@ ul li a:hover {
   border: 3px solid #333; /* Optional border */
   transition: all; /* Smooth transition for hover effect */
 }
+.image img {
+  margin-left: -80px;
+}
 .image {
   opacity: 0;
   transform: translateY(-40px);
@@ -195,7 +198,7 @@ ul li a:hover {
   width: 50px;
   height: 50px;
 }
-.footer p{
+.footer p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: turquoise;
   font-size: 18px;
@@ -235,7 +238,7 @@ ul li a:hover {
   font-size: 1rem;
   text-align: center;
 }
-.container p a{
+.container p a {
   text-decoration: none;
   color: rgb(8, 202, 192);
   list-style: none;
@@ -313,7 +316,7 @@ ul li a:hover {
   box-shadow: 0 0 20px rgba(69, 69, 196, 0.6);
   background: #1e1b4b;
 }
-.contact{
+.contact {
   background-color: #020630;
   text-align: center;
   border-radius: 50px;
@@ -322,22 +325,25 @@ ul li a:hover {
   padding: 50px 0;
   color: white;
 }
-.contact form{
+.contact form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.contact form .name, .mail, .message{
-  display: flex;  
+.contact form .name,
+.mail,
+.message {
+  display: flex;
   text-align: center;
   margin-left: 120px;
   gap: 10px;
 }
-.contact form label{
+.contact form label {
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.contact form input, .contact form textarea{
+.contact form input,
+.contact form textarea {
   width: 500px;
   padding: 10px;
   border-radius: 10px;
@@ -345,7 +351,7 @@ ul li a:hover {
   font-size: 18px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.contact form button{
+.contact form button {
   width: 200px;
   margin: auto;
   padding: 10px;
@@ -357,15 +363,17 @@ ul li a:hover {
   cursor: pointer;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.contact form button:hover{
+.contact form button:hover {
   background-color: rgb(100, 100, 255);
   transition: 0.3s;
 }
-.contact form input::placeholder, .contact form textarea::placeholder{
+.contact form input::placeholder,
+.contact form textarea::placeholder {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: gray;
 }
-.contact form .name input, .contact form .mail input{
+.contact form .name input,
+.contact form .mail input {
   margin-left: 30px;
 }
