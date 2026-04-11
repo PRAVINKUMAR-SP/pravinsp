@@ -8,7 +8,7 @@ const About = () => {
     <div className="min-h-screen bg-[#0f172a] text-white pt-24 pb-16 px-6">
       <Navbar />
       <div className="about-section max-w-7xl mx-auto">
-        <div className="container mb-20 text-center">
+        <div className="mb-12 md:mb-20 text-center w-full">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#6464ff] inline-block mb-2">
             About Me
           </h1>
@@ -43,17 +43,17 @@ const About = () => {
               { title: 'Technologies', content: 'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, PostgreSQL, Git' },
               { title: 'Focus', content: 'Responsive UI, APIs, performance, and team collaboration' }
             ].map((item, index) => (
-              <li key={index} className="card-professional w-100! p-8 bg-[#111827] border border-indigo-500/30 rounded-2xl transition-transform hover:-translate-y-2">
+              <li key={index} className="card-professional w-full p-6 md:p-8 bg-[#111827] border border-indigo-500/30 rounded-2xl transition-transform hover:-translate-y-2">
                 <h2 className="text-[#6464ff] text-2xl mb-4 font-bold">{item.title}</h2>
                 <p className="text-[#08cac0] text-lg leading-relaxed">{item.content}</p>
               </li>
             ))}
           </ul>
 
-          <div className="flex justify-center gap-6 mt-16">
-            <Link to="/projects" className="bg-[#4545c4] hover:bg-[#6464ff] text-white px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 active:scale-95 shadow-lg">See my projects</Link>
-            <Link to="/contact" className="border border-[#4545c4] text-white hover:bg-[#4545c4] px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 active:scale-95">Contact me</Link>
-            <Link to="/resume" className="bg-[#4545c4] hover:bg-[#6464ff] text-white px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 active:scale-95 shadow-lg">See my Resume</Link>
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mt-12 md:mt-16">
+            <Link to="/projects" className="w-full sm:w-auto text-center bg-[#4545c4] hover:bg-[#6464ff] text-white px-6 py-3 md:px-8 rounded-lg font-bold transition-all hover:scale-105 active:scale-95 shadow-lg">See my projects</Link>
+            <Link to="/contact" className="w-full sm:w-auto text-center border border-[#4545c4] text-white hover:bg-[#4545c4] px-6 py-3 md:px-8 rounded-lg font-bold transition-all hover:scale-105 active:scale-95">Contact me</Link>
+            <Link to="/resume" className="w-full sm:w-auto text-center bg-[#4545c4] hover:bg-[#6464ff] text-white px-6 py-3 md:px-8 rounded-lg font-bold transition-all hover:scale-105 active:scale-95 shadow-lg">See my Resume</Link>
           </div>
         </div>
       </div>
